@@ -4,6 +4,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
 public class CursosActivity extends AppCompatActivity {
     String valorRecibido;
     TextView textView;
@@ -12,6 +15,7 @@ public class CursosActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cursos);
+
 
         textView = findViewById(R.id.txtCurso);
 

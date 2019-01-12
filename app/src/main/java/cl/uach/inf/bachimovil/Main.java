@@ -10,6 +10,8 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 
 import android.view.View;
 import android.widget.FrameLayout;
@@ -40,7 +42,7 @@ public class Main extends AppCompatActivity{
         planFragment = new PlanFragment();
         materialFragment = new MaterialFragment();
 
-        setFragment(eventosFragment);
+        setFragment(foroFragment);
 
         mMainNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -77,8 +79,12 @@ public class Main extends AppCompatActivity{
     @TargetApi(Build.VERSION_CODES.N)
     @RequiresApi(api = Build.VERSION_CODES.N)
     public void onClick(View v){
+        foroFragment.onClick(v);
         eventosFragment.onClick(v);
         cursosFragment.onClick(v);
+
     }
+
+
 
 }

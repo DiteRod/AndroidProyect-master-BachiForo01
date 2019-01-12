@@ -3,6 +3,7 @@
     package="cl.uach.inf.bachimovil">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -21,11 +22,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".CursosActivity" />
-        <activity
-            android:name=".NuevoEvento"
-            android:label="@string/title_activity_nuevo_evento"
-            android:theme="@style/AppTheme.NoActionBar" />
-
+        <activity android:name=".ForumFormulario" />
+        <activity android:name=".Forum"></activity>
     </application>
 
 </manifest>

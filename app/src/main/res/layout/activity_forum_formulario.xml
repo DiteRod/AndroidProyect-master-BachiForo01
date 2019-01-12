@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ForumFormulario">
+
+    <EditText
+        android:id="@+id/title_a"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#F8F7F7"
+        android:ems="10"
+        android:hint="Titulo"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/taqs_a"
+        android:layout_width="163dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#F8F7F7"
+        android:ems="10"
+        android:hint="Taqs"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descripcion_a"
+        tools:layout_width="wrap_content" />
+
+    <Button
+        android:id="@+id/insertar_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="InsertarDatos"
+        android:text="Publicar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.787"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taqs_a"
+        app:layout_constraintVertical_bias="0.718" />
+
+    <ImageButton
+        android:id="@+id/btn"
+        android:layout_width="32dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="8dp"
+        android:background="#3F51B5"
+        android:src="@drawable/ic_reorder_black_24dp"
+        android:tint="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/taqs_a"
+        app:layout_constraintTop_toBottomOf="@+id/descripcion_a"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_width="25" />
+
+    <EditText
+        android:id="@+id/descripcion_a"
+        android:layout_width="324dp"
+        android:layout_height="179dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:background="#F8F7F7"
+        android:ems="10"
+        android:hint="Descripcion"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:verticalScrollbarPosition="right"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_a" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="380dp"
+        android:layout_height="42dp"
+        android:background="#3F51B5"
+        android:text="           Agregar nuevo Post"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="3dp" />
+
+
+</android.support.constraint.ConstraintLayout>
